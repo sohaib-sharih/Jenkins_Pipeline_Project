@@ -1,9 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'ubuntu:22.04'
-    }
-  }
+  agent { label 'linux' }
   stages {
     stage('Build') {
       steps {
